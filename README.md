@@ -1,8 +1,12 @@
-# PracticeCoin
+# PracticeCoin  
 Its a basic ERC20 where you can use the basic functions like crowdfunding.  
 It was made with solidity 0.4.9 but I migrated it to 0.4.24.  
-  
-# Steps  
+   
+# Tools  
+Ganache https://truffleframework.com/ganache  
+Metamask https://metamask.io/  
+
+# Steps    
 λ `npm install truffle@v4.1.14 -g`  
 λ `truffle version`  
 Truffle v4.1.14 (core: 4.1.14)  
