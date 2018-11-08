@@ -33,11 +33,11 @@ Transfer all practiceTokensupply to PracticeTokenSale
 λ `tokenInstance.transfer(saleInstance.address, practiceTokensupply, { from: web3.eth.accounts[0] })`  
 
 Check the balance of PracticeToken, this should return 0  
-λ `tokenInstance.balanceOf(tokenInstance.address)` 
+λ `tokenInstance.balanceOf(tokenInstance.address)`   
 BigNumber { s: 1, e: 0, c: [ 0 ] }  
 
 Check supply of PracticeToken, it should return 1000000 by now  
-λ `tokenInstance.balanceOf(saleInstance.address)` 
+λ `tokenInstance.balanceOf(saleInstance.address)`   
 BigNumber { s: 1, e: 0, c: [ 1000000 ] }  
 
 Doing this will deduct fees to the buyer  
