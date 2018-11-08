@@ -51,7 +51,7 @@ Try it with another user
 λ `tokenInstance.balanceOf(saleInstance.address)`   
 
 # Deploy
-This is if your already condifent and familiar with solidity and truffle commands and if you are ready to deploy your contract in main net you might wanna use this standard ERC 20 and 721:   
+This is if you are already confident and familiar with solidity and truffle commands and if you are ready to deploy your contract in main net you might wanna use this standard ERC 20 and 721:   
 v2.0: https://github.com/OpenZeppelin/openzeppelin-solidity/releases/tag/v2.0.0  
 v1.12.0: https://github.com/OpenZeppelin/openzeppelin-solidity/releases/tag/v1.12.0  
   
