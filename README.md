@@ -51,4 +51,8 @@ Try it with another user
 λ `tokenInstance.balanceOf(saleInstance.address)`   
 
 
-If you are ready to deploy your contract in main net you might wanna use this standard ERC (version November 2018):   https://github.com/OpenZeppelin/openzeppelin-solidity
+If you are ready to deploy your contract in main net you might wanna use this standard ERC 20 and 721:   
+v2.0: https://github.com/OpenZeppelin/openzeppelin-solidity/releases/tag/v2.0.0  
+v1.12.0: https://github.com/OpenZeppelin/openzeppelin-solidity/releases/tag/v1.12.0  
+  
+Latest and stable: https://github.com/OpenZeppelin/openzeppelin-solidity  
