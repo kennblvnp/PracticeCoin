@@ -21,7 +21,7 @@ Solidity v0.4.24 (solc-js)
 0x5313aeabd1ed00b7236b5a05a06ac5b6c417dbaa'   
 λ `tokenInstance.totalSupply().then(function(totalSupply){ practiceTokensupply=totalSupply; })`  
 
-Right now this supply is only for free. If you transfer, there is no fee.
+Right now this supply is only for free. If you transfer, there is no fee.  
 λ `practiceTokensupply`  
 BigNumber { s: 1, e: 6, c: [ 1000000 ] }  
 
