@@ -18,7 +18,7 @@ Solidity v0.4.24 (solc-js)
 # Truffle Console  
 λ `PracticeToken.deployed().then(function(instance){ tokenInstance=instance; })`  
 λ `tokenInstance.address`  
-0x5313aeabd1ed00b7236b5a05a06ac5b6c417dbaa'   
+0x5313aeabd1ed00b7236b5a05a06ac5b6c417dbaa   
 λ `tokenInstance.totalSupply().then(function(totalSupply){ practiceTokensupply=totalSupply; })`  
 
 Right now this supply is only for free. If you transfer, there is no fee.  
@@ -26,8 +26,8 @@ Right now this supply is only for free. If you transfer, there is no fee.
 BigNumber { s: 1, e: 6, c: [ 1000000 ] }  
 
 λ `PracticeTokenSale.deployed().then(function(instance){ saleInstance=instance; })`  
-λ `saleInstance.address`
-'0xcc75b1263e648148dd7d39fede9ba95e26049120'  
+λ `saleInstance.address`  
+0xcc75b1263e648148dd7d39fede9ba95e26049120  
 
 Transfer all practiceTokensupply to PracticeTokenSale  
 λ `tokenInstance.transfer(saleInstance.address, practiceTokensupply, { from: web3.eth.accounts[0] })`  
@@ -46,9 +46,15 @@ Doing this will deduct fees to the buyer
 Try it with another user  
 λ `saleInstance.buyTokens(5, { from: web3.eth.accounts[1], value: 5 * 10000000000000000000 })`  
 
-
 # To check the balance of PracticeTokenSale  
 λ `tokenInstance.balanceOf(saleInstance.address)`   
+
+# Where did the fee's go?  
+λ `web3.eth.getBalance(saleInstance.address)`   
+BigNumber { s: 1, e: 19, c: [ 500000 ] }  
+
+# How to transfer all earned ethereum to the owner of the smart contract?  
+λ `saleInstance.endSale()`  
 
 # Deploy
 This is if you are already confident and familiar with solidity and truffle commands and if you are ready to deploy your contract in main net you might wanna use this standard ERC 20 and 721:   
