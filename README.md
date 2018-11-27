@@ -54,7 +54,8 @@ Try it with another user
 BigNumber { s: 1, e: 19, c: [ 500000 ] }  
 
 # How to transfer all earned ethereum to the owner of the smart contract?  
-λ `saleInstance.endSale()`  
+λ `saleInstance.endSale()`   
+Expect a lot of money in your account
 
 # Deploy
 This is if you are already confident and familiar with solidity and truffle commands and if you are ready to deploy your contract in main net you might wanna use this standard ERC 20 and 721:   
